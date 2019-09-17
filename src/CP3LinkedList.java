@@ -36,7 +36,7 @@ public class CP3LinkedList<E>
 		Node newLink = new Node();
 		newLink.data = element;
 		newLink.next = first;
-		newLink.prev = first;
+		newLink.prev = null;
 		first = newLink;
 	}
 
@@ -45,8 +45,7 @@ public class CP3LinkedList<E>
 		Node newLink = new Node();
 		newLink.data = element;
 		newLink.next = null;
-
-		prev = newLink;
+		prev = newLink.prev;
 	}
 
 	public E getFirst()
